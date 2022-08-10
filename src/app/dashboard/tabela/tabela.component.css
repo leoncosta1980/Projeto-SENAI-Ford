@@ -1,0 +1,15 @@
+table{
+  width: 100%;
+  height:100%;
+}
+
+.table-head{
+  width: 100%;
+  height:100%;
+  background-color: rgb(5, 16, 163);
+  color:white;
+}
+
+.table-foot{
+  background-color: rgb(5, 16, 163);
+}
