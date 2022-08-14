@@ -2,14 +2,14 @@ export interface Tabela extends Array<Tabela>{
 }
 
 export interface Tabela{
-  codigo: number;
-  odometro: number;
-  nivelCombustivel: number;
-  Status: String;
-  Lat: number;
-  Long: number;
+  vin: number;
+  odometer: number;
+  fuelLevel: number;
+  status: String;
+  lat: number;
+  long: number;
 }
 
 export interface TabelaAPI {
-
+  payload: Tabela;
 }

@@ -1,9 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
-import {
-  switchMap,
-  tap
-} from 'rxjs/operators';
+import { switchMap, tap } from 'rxjs/operators';
 import { VehicleInfoService } from '../services/vehicle-info.service';
 import { merge } from 'rxjs';
 

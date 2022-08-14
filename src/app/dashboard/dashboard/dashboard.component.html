@@ -2,7 +2,7 @@
   <nav class="navbar navbar-light bg-white">
     <a class="navbar-brand">
     <i class="fa fa-bars mr-2"(click)="menu.abreMenu()"
-    (keyup.space)="menu.abreMenu()"></i>Menu</a>
+    (keyup.space)="menu.abreMenu()"></i> Menu</a>
     <div>
       <a [routerLink]="['/login']"><span><img src="/assets/img/baseline_logout_black_24dp.png"/></span></a>
     </div>
@@ -69,8 +69,9 @@
   <div class="image">
     <img src='{{"assets/img/"+vehicleInfos.vehicle.replace(" ","").toLowerCase()+".png"}}'/>
   </div>
-
+  
   <app-tabela></app-tabela>
+
 </div>
 
 <app-menu #menu>
@@ -80,3 +81,4 @@
     <li class="line"><a [routerLink]="['/dashboard']">Dashboard</a></li>
   </ul>
 </app-menu>
+
