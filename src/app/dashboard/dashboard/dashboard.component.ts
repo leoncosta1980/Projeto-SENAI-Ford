@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { switchMap, tap } from 'rxjs/operators';
-import { VehicleInfoService } from '../services/vehicle-info.service';
+import { VehicleInfoService } from './services/vehicle-info.service';
 import { merge } from 'rxjs';
 
 @Component({
@@ -17,6 +17,7 @@ export class DashboardComponent implements OnInit {
     switchMap((value) => this.vehicleInfoService.getVehicleInfo(value as string)),
     tap(console.log),
   )
+
 
   vehicles = [{
     id: "1",

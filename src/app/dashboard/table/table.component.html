@@ -1,0 +1,26 @@
+<div class="table">
+  <div class="td-page-wrapper" *ngIf="Table$ | async as Table">
+    <table>
+      <thead class="table-head">
+        <th>Código - Vin</th>
+        <th>Odômetro</th>
+        <th>Nível de Combustível</th>
+        <th>Status</th>
+        <th>Lat.</th>
+        <th>Long.</th>
+      </thead>
+      <tbody class="table-body">
+        <td><input [formControl]="tableInput"></td>
+        <td><strong>{{Table[0].odometer}} Km</strong></td>
+        <td><strong>{{Table[0].fuelLevel}} %</strong></td>
+        <td><strong>{{Table[0].status}}</strong></td>
+        <td><strong>{{Table[0].lat}}</strong></td>
+        <td><strong>{{Table[0].long}}</strong></td>
+      </tbody>
+      <tfoot class="table-foot">
+      </tfoot>
+    </table>
+  </div>
+</div>
+
+

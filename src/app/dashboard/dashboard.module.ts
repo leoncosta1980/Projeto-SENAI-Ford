@@ -6,13 +6,13 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { MenuModule } from '../common/components/menu/menu.module';
 import { MainModule } from '../home/main.module';
 import { FormsModule, ReactiveFormsModule} from '@angular/forms';
-import { TabelaComponent } from './tabela/tabela.component';
+import { TableComponent } from './table/table.component';
 
 
 @NgModule({
   declarations: [
     DashboardComponent,
-    TabelaComponent
+    TableComponent
   ],
   imports: [
     CommonModule,
@@ -22,6 +22,6 @@ import { TabelaComponent } from './tabela/tabela.component';
     FormsModule,
     ReactiveFormsModule
   ],
-  exports: [DashboardComponent],
+  exports: [DashboardComponent, TableComponent],
 })
 export class DashboardModule { }
